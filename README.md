@@ -1,7 +1,7 @@
 # CubeSat 1U – Nhiệm vụ quan sát Trái Đất (ESP32-S3 + GPS + 4G)
 
 Engineering Model vệ tinh nhỏ: chụp ảnh mặt đất, gắn thẻ GPS/tư thế/nhiệt độ, lưu trên OBC và truyền xuống trạm mặt đất qua 4G.
-Đồ án môn *Thiết kế, tích hợp vệ tinh nhỏ và đồ án* (EMA3103 34), Nhóm 02, ĐH Công nghệ – ĐHQGHN.
+Đồ án môn *Thiết kế, tích hợp vệ tinh nhỏ và đồ án* (EMA3103 34)
 
 ## Phần cứng
 ESP32-S3 CAM N16R8 · GPS GY-GPS6MV2 (NEO-6M) · modem 4G A7680C · pin 18650 + mạch sạc/bảo vệ.
