@@ -4,7 +4,7 @@ Engineering Model vệ tinh nhỏ: chụp ảnh mặt đất, gắn thẻ GPS/t�
 Đồ án môn *Thiết kế, tích hợp vệ tinh nhỏ và đồ án* (EMA3103 34), Nhóm 02, ĐH Công nghệ – ĐHQGHN.
 
 ## Phần cứng
-ESP32-S3 CAM N16R8 · GPS GY-GPS6MV2 (NEO-6M) · MPU6050 · DS18B20 · INA219 · modem 4G A7680C · pin 18650 + mạch sạc/bảo vệ.
+ESP32-S3 CAM N16R8 · GPS GY-GPS6MV2 (NEO-6M) · modem 4G A7680C · pin 18650 + mạch sạc/bảo vệ.
 Sơ đồ chân: `docs/pinout.md`.
 
 ## Kiến trúc
@@ -20,20 +20,7 @@ tools/                 server giả lập và công cụ ghép ảnh chạy trê
 docs/                  sơ đồ chân, ảnh, báo cáo
 ```
 
-## Cài đặt
-1. Arduino IDE 2.x + **esp32 by Espressif** (core 3.x). Board: `ESP32S3 Dev Module`, Flash 16 MB, PSRAM `OPI PSRAM`, USB CDC On Boot `Enabled`.
-2. Thư viện (Library Manager): Adafruit MPU6050, Adafruit INA219, Adafruit BusIO, Adafruit Unified Sensor, TinyGPSPlus, OneWire, DallasTemperature.
-3. Sao chép `secrets.example.h` thành `secrets.h` và điền APN, URL của dịch vụ server (không đưa `secrets.h` lên GitHub).
-4. Nạp qua **cổng USB gốc** của board.
 
 ## Thứ tự kiểm tra (bring-up)
 `01_i2c_scan` → `02_gps_nmea` → `03_modem_at` → `04_camera_snap` → `cubesat_eo`.
 
-## Thử nghiệm
-Bảng bài thử T1–T6 (nguồn, nhiệt độ, truyền thông, mất cảm biến, reset OBC, end-to-end) xem báo cáo mục 3.3.3. Kết quả ghi trong `tests/`.
-
-## Trạng thái
-Mã nguồn viết theo thiết kế trong báo cáo; cần biên dịch và hiệu chỉnh trên phần cứng thật (hệ số α, ngưỡng, lệnh AT theo firmware A7680C).
-
-## Giấy phép
-MIT.
