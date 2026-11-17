@@ -8,5 +8,4 @@
 | DS18B20 | GPIO41 (+ trở kéo 4,7 kΩ) | 1-Wire |
 | Camera | Đầu FPC (GPIO4–18) | DVP |
 
-Không dùng: GPIO35–37 (PSRAM), GPIO19/20 (USB), GPIO0/3/45/46 (strapping).
-Log và nạp chương trình qua cổng USB gốc (USB CDC On Boot = Enabled) vì GPIO43/44 dùng cho modem.
+<img width="962" height="519" alt="image" src="https://github.com/user-attachments/assets/cb8cfe45-3bc8-493c-b5cf-f99059979608" />
