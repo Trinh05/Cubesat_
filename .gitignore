@@ -1,0 +1,10 @@
+# Thông tin bí mật - KHÔNG đưa lên GitHub
+firmware/cubesat_eo/secrets.h
+received/
+# Build / IDE
+build/
+*.bin
+*.elf
+.vscode/
+.DS_Store
+__pycache__/
